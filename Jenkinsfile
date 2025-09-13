@@ -2,7 +2,7 @@ pipeline {
     // -- node label aproach
     //agent { label 'ubnutu-cj-agent' }
     // -- node agent approach - recommand for multi agent
-    agent jenkins-node-cj
+    agent { label 'jenkins-node-cj' }
     stages {
         stage('Checkout') {
             steps {

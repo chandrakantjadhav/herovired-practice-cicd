@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'ubnutu-cj-agent' }
     stages {
         stage('Checkout') {
             steps {
